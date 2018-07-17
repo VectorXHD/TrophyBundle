@@ -29,6 +29,11 @@ vectorxhd_trophy:
 ```
 Il faut aussi implémenter `UserTrophyInterface` sur votre entité `user_class`
 
+### Mettre a jour la base de donnée
+```bash
+$ php bin/console doctrine:schema:update --force
+```
+
 ## Ajouter un badge 
 Voici l'exemple d'un badge utiliser pour les commentaire
 ```php

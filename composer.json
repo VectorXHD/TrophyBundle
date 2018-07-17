@@ -1,0 +1,27 @@
+{
+    "name": "vectorxhd/trophy-bundle",
+    "description": "A simple trophy bundle for Symfony",
+    "type": "symfony-bundle",
+    "keywords": ["symfony", "trophy", "bundle"],
+    "homepage": "https://github.com/VectorXHD/TrophyBundle",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.5.9",
+        "doctrine/data-fixtures": "^1.3",
+        "doctrine/doctrine-bundle": "^1.6",
+        "doctrine/orm": "^2.5",
+        "sensio/framework-extra-bundle": "^5.0.0",
+        "twig/twig": "^1.0||^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "VectorXHD\\TrophyBundle\\": ""
+        }
+    },
+    "authors": [
+        {
+            "name" : "VectorXHD",
+            "homepage": "https://github.com/VectorXHD"
+        }
+    ]
+}

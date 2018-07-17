@@ -1,0 +1,53 @@
+<?php
+
+namespace VectorXHD\TrophyBundle\Entity;
+
+/**
+ * BadgeUnlock
+ */
+class BadgeUnlock
+{
+    /**
+     * @var int
+     */
+    private $id;
+
+    /**
+     * @var \VectorXHD\TrophyBundle\Entity\Badge
+     */
+    private $badge;
+
+    /**
+     * Get id.
+     *
+     * @return int
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * Set badge.
+     *
+     * @param \VectorXHD\TrophyBundle\Entity\Badge|null $badge
+     *
+     * @return BadgeUnlock
+     */
+    public function setBadge(\VectorXHD\TrophyBundle\Entity\Badge $badge = null)
+    {
+        $this->badge = $badge;
+
+        return $this;
+    }
+
+    /**
+     * Get badge.
+     *
+     * @return \VectorXHD\TrophyBundle\Entity\Badge|null
+     */
+    public function getBadge()
+    {
+        return $this->badge;
+    }
+}

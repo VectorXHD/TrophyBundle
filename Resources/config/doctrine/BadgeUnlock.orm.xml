@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity repository-class="VectorXHD\TrophyBundle\Repository\BadgeUnlockRepository" name="VectorXHD\TrophyBundle\Entity\BadgeUnlock">
+    <id name="id" type="integer" column="id">
+      <generator strategy="AUTO"/>
+    </id>
+    <many-to-one field="badge" target-entity="VectorXHD\TrophyBundle\Entity\Badge" inversed-by="unlocks" />
+    <many-to-one field="user" target-entity="VectorXHD\TrophyBundle\Entity\UserTrophyInterface" />
+  </entity>
+</doctrine-mapping>

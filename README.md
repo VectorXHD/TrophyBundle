@@ -70,6 +70,5 @@ Cette événement dispose de plusieurs getter
 ## Todo
 
  - Ajouter des test
- - Ajouter le bundle sur packagist
+ - ~~Ajouter le bundle sur packagist~~
  - Tester sur plusieurs version de symfony
-
